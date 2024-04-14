@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1140px;
+    justify-content: center;
+}
+
+header {
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 5px solid #9b9cff;;
+    background-color: #1e1e27;
+}
+
+header .logo-animation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;    
+}
+
+header .logo-animation img {
+    position: absolute;
+    cursor: pointer;
+}
+
+header .logo-animation .img_parte1 {
+    max-width: 80px;
+}
+
+header .logo-animation .img_parte2 {
+    margin-top: -20px;
+    max-width: 70px;
+    transition: all 0.5s linear;    
+}
+
+header .logo-animation:hover .img_parte2 {
+    margin-top: -30px;
+}
+
+header .logo-animation .img_parte3 {
+    max-width: 80px;
+
+}
+
+header .logo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+header .logo-title h1,
+header .logo-title h2 {
+    color: #f9f9f9;
+}
+
+header .logo-title h1 {
+    font-size: 30px;
+    
+}
+
+header .logo-title h2 {
+    font-size: 15px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.insertMeta {
+    display: flex;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 10px;
+    width: 100%;
+}
+
+.insertMeta .add-img {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(247, 247, 255);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #CCC;
+}
+
+.insertMeta .add-img span {
+    font-size: 70px;
+}
+
+.insertMeta .add-img p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.insertMeta .img-description {
+    flex: 1;
+}
+
+.insertMeta .box-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.insertMeta .box-description:first-child {
+    margin-bottom: 20px;
+}
+
+.insertMeta .box-description label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.insertMeta .box-description input {
+    height: 30px;
+    border: 2px solid #1e1e27;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.insertMeta .box-description textarea {
+    border: 2px solid #1e1e27;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    max-height: 100px;
+    resize: none;
+}
+
+.insertMeta .buttons {
+    width: 200px;
+    height: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    border-left: 1px solid #CCC;
+}
+.insertMeta .buttons button {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f9f9f9;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+
+.area {
+    width: 100%;
+}
+
+.area h3 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.area .item-thumbnail {
+    display: flex;
+    padding: 5px;
+    width: 100%;    
+    border-bottom: 1px solid #9a9a9a;
+}
+.area .item-thumbnail .texts {
+    margin-left: 5px;
+    width: calc(100% - 150px);
+}
+
+.area .item-thumbnail .texts h3 {
+    margin-bottom: 5px;
+}
+
+.area .item-thumbnail .texts p {
+    margin-left: 5px;
+    word-wrap: break-word;
+}
+
+.area .item-thumbnail img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.area .item-thumbnail .item-options {
+    display: flex;
+    align-items: flex-end;
+}
+
+.area .item-thumbnail .item-options span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #9a9a9a;
+}

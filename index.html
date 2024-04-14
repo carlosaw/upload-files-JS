@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Thumbanails com JS</title>
+</head>
+<body>
+    <header>
+        <div class="logo-animation">
+            <img class="img_parte1" src="assets/images/logo_portifolio_parte1.png" alt="">
+            <img class="img_parte2" src="assets/images/logo_portifolio_parte3.png" alt="">
+            <img class="img_parte3" src="assets/images/logo_portifolio_parte2.png" alt="">
+        </div>
+        <div class="logo-title">
+            <h1>Envie suas fotos</h1>
+            <h2>Resolução de Exercícios e Projetos da plataforma b7web</h2>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h3>Criação de Thumbnails com JS</h3>
+            <div class="insertMeta">
+                <div class="box_files">
+                    <div class="add-img" onclick="starUpload()">                       
+                        <span class="material-icons">upload_file</span>
+                        <p>Add Imagem</p>
+                    </div>
+                    <input type="file" accept="image/*" id="image" hidden>                    
+                </div>
+
+                <div class="img-description">
+                    <div class="box-description">
+                        <input type="text" id="img-title" placeholder="Digite o Título da Thumbnail" maxlength="60">
+                    </div>
+                    <div class="box-description">
+                        <textarea name="description" id="img-resume" cols="30" rows="6" placeholder="Digite a descrição" maxlength="200"></textarea>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button style="background-color: #89c966" onclick="salvarThumb()">Salvar</button>                   
+                    <button style="background-color: #bd2c2b" onclick="limparPreenchimento()">Limpar</button>
+                </div>
+            </div>
+            <div class="area">
+                <h3>Thumbnails Salvas:</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
